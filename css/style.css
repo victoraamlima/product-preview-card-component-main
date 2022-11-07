@@ -1,0 +1,80 @@
+html {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.background {
+    display: flex;
+    background-color: #F3EAE3;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+    width: 50%;
+}
+
+
+.card .card-image {
+    
+}
+
+.card .card-image img {
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+
+.card .card-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+}
+
+.card .card-information .product-type {
+    text-transform: uppercase;
+    /* color: hsl(212, 21%, 14%); */
+}
+
+.card .card-information h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.card .card-information p {
+    font-size: 14px;
+}
+
+.card .card-information .card-price {
+    display: flex;
+    align-items: center;
+    color: hsl(158, 36%, 37%);
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+
+.card .card-information .card-price .price {
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+.card .card-information .card-price .old-price {
+    text-decoration: line-through;
+}
+
+.card .card-information .btn a {
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 20px 71px;
+    border-radius: 10px;
+}
+
+.card .card-information .btn a i {
+    margin-right: 10px;
+}
