@@ -1,13 +1,18 @@
 html {
     font-family: 'Fraunces', serif;
     font-family: 'Montserrat', sans-serif;
-   
+    max-height: 100vh;
+    font-weight: 500;
+    
 }
 
+body {
+    --ratio: 6 / 8;
+}
 .background {
     display: flex;
     background-color: #F3EAE3;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     height: 100vh;
 }
@@ -15,63 +20,90 @@ html {
 .card {
     background-color: #fff;
     display: flex;
-    border-radius: 20px;
-    width: 50%;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
 }
 
 
 .card .card-image {
-    
+    width: 800px;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+
 }
 
 .card .card-image img {
-    border-radius: 20px 0px 0px 20px;
+    
     height: 100%;
 }
 
 .card .card-information {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 40px;
     gap: 40px;
+    width: 100%;
 }
 
 .card .card-information .product-type {
     text-transform: uppercase;
-    /* color: hsl(212, 21%, 14%); */
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 20px;
+    /* font-size: 2.38vw; */
+
+    color: hsl(228, 12%, 48%);
 }
+
 
 .card .card-information h1 {
     font-family: 'Fraunces', serif;
+    font-size: 46px;
+    font-weight: 700;
 }
 
 .card .card-information p {
-    font-size: 14px;
+    font-size: 20px;
+    color: hsl(228, 12%, 48%);
+
 }
 
 .card .card-information .card-price {
     display: flex;
     align-items: center;
-    color: hsl(158, 36%, 37%);
     font-weight: 900;
     font-family: 'Fraunces', serif;
 }
 
 .card .card-information .card-price .price {
-    font-size: 30px;
-    margin-right: 40px;
+    font-size: 35px;
+    margin-right: 25px;
+        color: hsl(158, 36%, 37%);
+
 }
 
 .card .card-information .card-price .old-price {
     text-decoration: line-through;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card .card-information .btn {
+    max-width: 320px;
+
 }
 
 .card .card-information .btn a {
     color: #fff;
     background-color: hsl(158, 36%, 37%);
-    width: 100%;
-    padding: 20px 71px;
+    max-width: 320px;
+    font-size: 20px;
+    /* padding: 15px 80px; */
+    padding: 15px 10vw;
     border-radius: 10px;
 }
 

@@ -1,0 +1,28 @@
+@media (max-width: 840px) {
+    .card {
+        width: 95vw;
+        height: calc(95vw * var(--ratio));
+    }
+
+    .card .card-information{
+        gap: 1vw;
+        /* gap: calc(4.76vw * var(--ratio)); */
+    }
+    .card .card-information .product-type {
+        /* font-size: calc(15px + 0.5vw); */
+        font-size: 2.38vw;
+        line-height: calc(1.1em + 0.5vw);
+    }
+
+    .card .card-information h1 {
+        font-size: 5.47vw;
+    }
+
+    .card .card-information p , .card .card-information .card-price .old-price , .card .card-information .btn a{
+        font-size: 2.38vw;
+    }
+
+    .card .card-information .card-price .price {
+        font-size: 4.16vw;
+    }
+}
