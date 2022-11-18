@@ -1,28 +1,58 @@
-@media (max-width: 840px) {
+@media(max-width:840px) {
+    html {
+        font-size: 12px;
+    }
+    
     .card {
-        width: 95vw;
-        height: calc(95vw * var(--ratio));
+        flex-direction: column;
+        width: 600px;
+        height: 1000px;
     }
 
-    .card .card-information{
-        gap: 1vw;
-        /* gap: calc(4.76vw * var(--ratio)); */
-    }
-    .card .card-information .product-type {
-        /* font-size: calc(15px + 0.5vw); */
-        font-size: 2.38vw;
-        line-height: calc(1.1em + 0.5vw);
+    .card .card-image {
+        background-image: url(../images/image-product-mobile.jpg);
+        width: 100%;
+        height: 420px;
+        border-radius: 10px 10px 0 0;
+
     }
 
-    .card .card-information h1 {
-        font-size: 5.47vw;
+    .card .card-information {
+        width: 100%;
+        gap: 2.5rem;
+        padding: 2.5rem 4rem;
     }
 
-    .card .card-information p , .card .card-information .card-price .old-price , .card .card-information .btn a{
-        font-size: 2.38vw;
+    .card .card-price {
+        margin-bottom: 25px;
     }
 
-    .card .card-information .card-price .price {
-        font-size: 4.16vw;
+    .card .card-information .btn a {
+        padding: 25px 163.5px;
+    }
+
+}
+
+@media(max-width:620px) {
+    html {
+        font-size: 5.5px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 515px;
+    }
+
+    .card .card-image {
+        height: 240px;
+    }
+
+    .card .card-information {
+        gap: 12px;
+    }
+
+    .card .card-information .btn a {
+        padding: 15px 84px;
+        
     }
 }

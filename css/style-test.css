@@ -3,9 +3,12 @@ html {
     font-family: 'Montserrat', sans-serif;
     max-height: 100vh;
     font-weight: 500;
-    font-size: 10px;
+    
 }
 
+body {
+    --ratio: 6 / 8;
+}
 .background {
     display: flex;
     background-color: #F3EAE3;
@@ -24,42 +27,51 @@ html {
 
 
 .card .card-image {
-    width: 400px;
+    width: 100%;
+    height: 100%;
     background-image: url(../images/image-product-desktop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0px 0px 10px;
 
 }
+
+/* .card .card-image img {
+    
+    height: 100%;
+} */
 
 .card .card-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem;
+    padding: 40px;
     gap: 40px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .card .card-information .product-type {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 5px;
-    font-size: 2rem;
+    font-size: 20px;
+    /* font-size: 2.38vw; */
+
     color: hsl(228, 12%, 48%);
 }
+
 
 .card .card-information h1 {
     font-family: 'Fraunces', serif;
-    font-size: 4.6rem;
+    font-size: 46px;
     font-weight: 700;
-    line-height: 5rem;
 }
 
 .card .card-information p {
-    font-size: 2rem;
+    font-size: 20px;
     color: hsl(228, 12%, 48%);
-    line-height: 3rem;
+
 }
 
 .card .card-information .card-price {
@@ -70,27 +82,32 @@ html {
 }
 
 .card .card-information .card-price .price {
-    font-size: 3.5rem;
+    font-size: 35px;
     margin-right: 25px;
-    color: hsl(158, 36%, 37%);
+        color: hsl(158, 36%, 37%);
+
 }
 
 .card .card-information .card-price .old-price {
     text-decoration: line-through;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 20px;
+}
+
+.card .card-information .btn {
+    max-width: 320px;
+
 }
 
 .card .card-information .btn a {
     color: #fff;
     background-color: hsl(158, 36%, 37%);
-    font-size: 2rem;
+    max-width: 320px;
+    font-size: 20px;
     padding: 15px 85px;
+    /* padding: 15px 10vw; */
     border-radius: 10px;
-}
-
-.card .card-information .btn a:hover {
-    background-color: #1B402E;
+    width: 100%;
 }
 
 .card .card-information .btn a i {
